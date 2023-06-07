@@ -15,7 +15,6 @@ class Pet(Ninja):
     def sleep(self):
         # sleep = 25
         # self.energy = self.energy + sleep if self.energy + sleep <= self.max_energy else self.max_energy
-        self.energy += 25
         self.energy = Pet.energy_check(self.energy, 25)
         return self
 
